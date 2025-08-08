@@ -1,3 +1,26 @@
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/AMINE1921/instacomments">
+    <img src="./public/logo512.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">instaComments</h3>
+
+  <p align="center">
+    A simple CLI to fetch Instagram comments (parents and optional replies) and export them to JSON, CSV, or TXT.
+    <br />
+    This project is based on <a href="https://www.python.org/">Python</a> and uses <a href="https://requests.readthedocs.io/">Requests</a>, <a href="https://tqdm.github.io/">tqdm</a>, and <a href="https://saurabh-kumar.com/python-dotenv/">python-dotenv</a>.
+    <br />
+  </p>
+  <p align="center">
+    <a href="https://github.com/AMINE1921"><img src="https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white"> </a>
+    <a href="http://discordapp.com/channels/@AMINE#5328"><img src="https://img.shields.io/badge/discord-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"> </a>
+  </p>
+</p>
+<br />
+<br />
+
 ## InstaComments: Instagram Comment Scraper
 
 A simple, robust Python script to fetch parent comments (and optionally replies) from an Instagram Reel or Post using your session cookies. Output can be JSON, CSV, or TXT.
@@ -86,5 +109,5 @@ Output examples:
 
 - Private content or expired cookies will cause missing data; refresh cookies from instagram.com.
 - Too many requests can trigger rate limits (HTTP 429). The script does not bypass rate limits.
- - If you use `--no-dedupe`, the usernames output may contain repeated entries when duplicates exist.
+- If you use `--no-dedupe`, the usernames output may contain repeated entries when duplicates exist.
 
