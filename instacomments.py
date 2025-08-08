@@ -291,13 +291,13 @@ def make_arg_parser() -> argparse.ArgumentParser:
             action=action_bool,  # type: ignore[arg-type]
             default=True,
             help=(
-                "Activer/désactiver la suppression des doublons (par username en mode usernames, "
-                "par id en mode detailed). Par défaut: activé."
+                "Enable/disable duplicate removal (by username in 'usernames' mode, "
+                "by id in 'detailed' mode). Default: enabled."
             ),
         )
     else:
         # Fallback for very old Python: only provide positive flag
-        parser.add_argument("--dedupe", action="store_true", help="Supprimer les doublons dans la sortie")
+        parser.add_argument("--dedupe", action="store_true", help="Remove duplicates in the output")
     parser.add_argument("--no-progress", action="store_true", help="Disable progress bar")
     return parser
 
