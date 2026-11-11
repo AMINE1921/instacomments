@@ -1,4 +1,4 @@
-requests
-tqdm
-python-dotenv
-urllib3>=1.26
+requests>=2.32,<3
+tqdm>=4.66,<5
+python-dotenv>=1.0,<2
+urllib3>=2.0,<3

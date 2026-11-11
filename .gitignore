@@ -14,7 +14,7 @@ venv/
 *.log
 *.tmp
 .out/
-listComments.txt
+listComments.*
 
 # C extensions
 *.so
